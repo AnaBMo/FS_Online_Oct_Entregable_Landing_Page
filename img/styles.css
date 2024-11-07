@@ -1,0 +1,131 @@
+
+.labelNav {
+    font-family: Futura, sans-serif;
+    color: #009D95;
+    font-size: 18px;
+}
+
+.selectNav {
+    font: 25px / FontAwesome;
+    text-rendering: auto;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: #009D95;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 50px;
+    margin: 0%;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    width: 900px;
+    height: 120px;
+}
+
+li {
+    list-style-type: none;
+    padding: 15px 20px;
+}
+
+.perfilCompras { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+svg {
+    width: 20px;
+    height: 30px;
+}
+
+#imagenCarrusel {
+    width: 100%;
+    height: auto;
+}
+
+#btn-unirClub {
+    background-color: #EA9FA6;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 30px;
+    font-family: Futura, sans-serif;
+    font-size: 16px; 
+    border: 0;  
+    height: 60px;
+}
+
+#botonMensaje {
+    background-color: #EA9FA6;
+    color: white; /* tampoco puedo poner el icono blanco */
+    border-radius: 100px;
+    border: 0;
+    height: 60px;
+    width: 60px;
+}
+
+.btnFlotantes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+}
+
+#cuenta, #lupa, #carrito {
+    color: #009D95;
+} /* no consigo cambiar el color de los iconos... */
+
+#menu-desplegable {
+    display: none;
+} 
+
+@media (max-width: 480px) {
+    .menu {
+        display: none;
+        padding: 10px;
+        border-radius: 5px;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        width: 200px;
+    }
+    .selectNav {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 10px;
+        width: 200px;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .selectNav {
+        display: none;
+        cursor: pointer;
+    }  
+}
